@@ -2,20 +2,24 @@
 
 document.getElementById('btn-addmony').addEventListener('click', function(e){
     e.preventDefault();
-    console.log("Submit workd")
 
     // get amount
     const amout = document.getElementById('amount').value;
-    console.log(amout); 
 
     // get pin from home
     const pin = document.getElementById('pin').value;
-    console.log(pin);
 
-    // pin validation
-    if (pin ==="4"){
-        console.log("mony add successful");
-        
+    // pin validation check but wrong way 
+    if (pin ==="1234"){
+
+        // get the current balance
+        const currentBalance = document.getElementById('current-balance').innerText;
+
+        // addition to current balance and new balance  and convert the value string to float 
+        const newCurrentBalance = parseFloat(currentBalance) + parseFloat(amout);
+
+        // show the newCurrentBalance in the UI
+        document.getElementById('current-balance').innerText=newCurrentBalance;
 
     }else{
         console.log("wrong pin")
