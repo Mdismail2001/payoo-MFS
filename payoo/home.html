@@ -24,13 +24,13 @@
                     <!-- divider -->
                     <div class="divider "></div>
                     <!-- card button-->
-                    <button class="btn btn-xl">Add Mony</button>
-                    <button class="btn btn-xl">Cash Out</button>
+                    <button id="addmony-btn" class="btn btn-xl">Add Mony</button>
+                    <button id="cashout-btn" class="btn btn-xl">Cash Out</button>
                     <!-- divider -->
                     <div class="divider "></div>
 
                     <!-- input forms for add  mony-->
-                    <form class="fieldset hidden">
+                    <form id="addmony-form" class="fieldset ">
                         <label class="label text-black">Amount</label>
                         <input id="amount" type="number" class="input text-black" placeholder="Amount" />
                         <label class="label text-black">Pin</label>
@@ -40,7 +40,7 @@
                     </form>
 
                     <!-- input forms for cash out -->
-                    <form class="fieldset">
+                    <form id="cashout-form" class="fieldset hidden ">
                         <label class="label text-black">Amount</label>
                         <input id="cashout-amount" type="number" class="input text-black" placeholder="Amount" />
                         <label class="label text-black">Pin</label>
@@ -51,7 +51,9 @@
 
 
     </main>
-    <script src="/payoo/js/home.js"></script>
-</body>
+    <!-- <script src="/payoo/js/home.js"></script> -->
+    <script src="/payoo/js/addMony.js"></script>
+    <script src="/payoo/js/cashOut.js"></script>
+    <script src="/payoo/js/features.js"></script>
 
 </html>
