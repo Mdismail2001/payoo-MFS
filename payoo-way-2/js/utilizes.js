@@ -23,6 +23,7 @@ function showPageById(id){
     // add hidden attribute in the all button class
     document.getElementById('addmony-form').classList.add('hidden');
     document.getElementById('cashout-form').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
 
     // removed the hidden attribute for showing the section using id 
 
